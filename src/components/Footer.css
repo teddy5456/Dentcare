@@ -1,0 +1,180 @@
+/* Footer container styling */
+.footer {
+    background: linear-gradient(135deg, #0f192f, #1e2a45); /* Gradient background */
+    padding: 40px 20px; /* Padding around the footer */
+    color: #ffffff; /* Light text color for readability */
+    border-top: 2px solid #1676dd; /* Blue border at the top */
+    position: relative; /* For the position of the footer-bottom */
+    overflow: hidden; /* Ensure children are contained */
+}
+
+/* Footer bottom styling */
+.footer-bottom {
+    text-align: center; /* Center the copyright text */
+    padding: 10px 0;
+    position: absolute; /* Position it at the bottom */
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd; /* Border at the top of the bottom section */
+    font-size: 0.8rem; /* Smaller font size */
+}
+
+/* Flex container for footer sections */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between sections */
+}
+
+/* Individual sections within the footer */
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 180px; /* Ensures sections don’t get too narrow on small screens */
+}
+
+/* Logo section styling */
+.footer-logo span {
+    padding-right: 70%;
+    font-size: 2em; /* Slightly smaller font size */
+    font-weight: 700;
+    color: #ffffff; /* Light color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Navigation section styling */
+.footer-nav h2 {
+    font-size: 1.2rem; /* Smaller font size */
+    margin-bottom: 10px;
+    color: #1676dd; /* Brand color */
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin: 5px 0;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem; /* Smaller font size */
+    transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+    color: #1676dd; /* Highlight color on hover */
+}
+
+/* Call-to-action button styling */
+.footer-cta h2 {
+    font-size: 1.2rem; /* Smaller font size */
+    margin-bottom: 10px;
+    color: #ffffff; /* Light color for contrast */
+}
+
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #1676dd, #125a9a); /* Gradient background */
+    color: white;
+    border-radius: 50px; /* Rounded button */
+    text-decoration: none;
+    font-size: 0.9rem; /* Smaller font size */
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #125a9a, #0f192f); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Social media icons styling */
+.footer-socials h2 {
+    font-size: 1.2rem; /* Smaller font size */
+    margin-bottom: 10px;
+    color: #ffffff; /* Light color for contrast */
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 1.5rem; /* Slightly smaller size */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #1676dd; /* Highlight color on hover */
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Clients section styling */
+.footer-clients {
+    flex: 1;
+    margin: 10px;
+    min-width: 180px;
+}
+
+.footer-clients h2 {
+    font-size: 1.2rem; /* Smaller font size */
+    margin-bottom: 10px;
+    color: #ffffff; /* Light color for contrast */
+}
+
+.footer-client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between logos */
+    justify-content: center; /* Center logos */
+}
+
+.footer-client-logos img {
+    max-width: 80px; /* Smaller logo size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure logos are not distorted */
+    filter: brightness(0) invert(1); /* Invert colors for better contrast */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-client-logos img:hover {
+    transform: scale(1.1); /* Slightly enlarge logos on hover */
+    filter: brightness(1) invert(0); /* Normal color on hover */
+}
+
+/* Contact section styling */
+.footer-contact {
+    padding: 15px;
+    border-radius: 12px; /* Rounded corners */
+    background: rgba(27, 38, 61, 0.8); /* Semi-transparent background */
+    text-align: left;
+}
+
+/* Contact information styling */
+.footer-contact h2 {
+    font-size: 1.2rem; /* Smaller font size */
+    margin-bottom: 10px;
+    color: #ffffff; /* Light color for contrast */
+}
+
+.footer-contact p {
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.footer-contact p a {
+    color: #1676dd; /* Highlight color for links */
+    text-decoration: none;
+}
+
+.footer-contact p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

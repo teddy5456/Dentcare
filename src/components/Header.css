@@ -1,0 +1,157 @@
+/* header & nav */
+header {
+    color: black;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #f4f5f9;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    color: #171e54;
+    padding: 8px 8px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: relative; /* For the underline effect */
+}
+
+nav ul li.active {
+    font-size: 0.8rem;
+    font-weight: 900; /* Optional: make the font bolder for the active item */
+}
+
+nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px; 
+    background-color: #2b3898; 
+    position: absolute;
+    bottom: -5px;
+    left: 13px;
+    border-radius: 13px;
+}
+
+book.active::after{
+    content: '';
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #171e54;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: rgb(45, 45, 218);
+}
+
+nav ul li a.active {
+    color: #48560b;
+}
+
+.book {
+    padding: 10px 20px;
+    background-color: #171e54;
+    border-radius: 0 16px 16px 16px;
+    color: white;
+    display: inline-block; /* Make sure it stays inline */
+    text-align: center; /* Center text inside button */
+    text-decoration: none; /* Remove underline if it's a link */
+}
+
+.book a {
+    color: white;
+}
+
+/* Header Text */
+header h1 {
+    padding-left: 25px;
+    font-size: 2.5em;
+    color: rgb(100, 0, 128);
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.hamburger {
+    display: none; 
+    font-size: 1.8em;
+    font-weight: 900;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #171e54;
+}
+
+
+/* Mobile devices */
+@media (max-width: 757px) {
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        padding: 10px;
+        top: 88px; 
+        left: 65%; 
+        transform: translateX(-50%); 
+        width: 50%;
+        text-align: center;
+        border-radius: 8px;
+        z-index: 10; 
+        background-color: #e4e5ed;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        padding: 10px 0; /* Adjust padding for spacing */
+    }
+
+    .book {
+        color: white;
+        border-radius: 16px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+    }
+    
+    nav ul li a:active {
+        color: #233b7d;
+    }
+
+    .hamburger {
+        margin-right: 20px; /* Adjust as needed */
+        display: block; /* Show hamburger button on mobile */
+    }
+}

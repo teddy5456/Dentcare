@@ -32,11 +32,17 @@ const Header = () => {
                     <li className={activeSection === 'about' ? 'active' : ''} onClick={() => handleNavClick('about')}>
                         <Link to="/about">About Us</Link>
                     </li>
-                    <li className={activeSection === 'contact' ? 'active' : ''} onClick={() => handleNavClick('contact')}>
-                        <Link to="/contact">Contact Us</Link>
+                    <li className={activeSection === 'faq' ? 'active' : ''} onClick={() => handleNavClick('faq')}>
+                        <Link to="/faq">FAQ</Link>
+                    </li>
+                    <li className={activeSection === 'blog' ? 'active' : ''} onClick={() => handleNavClick('blog')}>
+                        <Link to="/blog">Blog</Link>
+                    </li>
+                    <li className={activeSection === 'team' ? 'active' : ''} onClick={() => handleNavClick('team')}>
+                        <Link to="/team">Team</Link>
                     </li>
                     <li className={`book ${activeSection === 'book' ? 'active' : ''}`} onClick={() => handleNavClick('book')}>
-                        <a href="#book">Book Now</a>
+                        <Link to="/book">Book Appointment</Link>
                     </li>
                 </ul>
             </nav>

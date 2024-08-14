@@ -1,180 +1,188 @@
-/* Footer container styling */
+/* Footer.css */
 .footer {
-    background: linear-gradient(135deg, #0f192f, #1e2a45); /* Gradient background */
-    padding: 40px 20px; /* Padding around the footer */
-    color: #ffffff; /* Light text color for readability */
-    border-top: 2px solid #1676dd; /* Blue border at the top */
-    position: relative; /* For the position of the footer-bottom */
-    overflow: hidden; /* Ensure children are contained */
-}
-
-/* Footer bottom styling */
-.footer-bottom {
-    text-align: center; /* Center the copyright text */
-    padding: 10px 0;
-    position: absolute; /* Position it at the bottom */
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid #ddd; /* Border at the top of the bottom section */
-    font-size: 0.8rem; /* Smaller font size */
-}
-
-/* Flex container for footer sections */
-.footer-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-container {
+    background-color: #e0e0e0;
+    border-radius: 13px;
+    padding: 50px 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Space between sections */
-}
-
-/* Individual sections within the footer */
-.footer-section {
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
     flex: 1;
-    margin: 10px;
-    min-width: 180px; /* Ensures sections don’t get too narrow on small screens */
-}
-
-/* Logo section styling */
-.footer-logo span {
-    padding-right: 70%;
-    font-size: 2em; /* Slightly smaller font size */
-    font-weight: 700;
-    color: #ffffff; /* Light color for contrast */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
-}
-
-/* Navigation section styling */
-.footer-nav h2 {
-    font-size: 1.2rem; /* Smaller font size */
-    margin-bottom: 10px;
-    color: #1676dd; /* Brand color */
-}
-
-.footer-nav ul {
-    list-style-type: none;
+    padding: 0 15px;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .footer-nav ul {
+    display: block;
+    list-style: none;
     padding: 0;
-}
-
-.footer-nav ul li {
-    margin: 5px 0;
-}
-
-.footer-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 0.9rem; /* Smaller font size */
-    transition: color 0.3s ease;
-}
-
-.footer-nav ul li a:hover {
-    color: #1676dd; /* Highlight color on hover */
-}
-
-/* Call-to-action button styling */
-.footer-cta h2 {
-    font-size: 1.2rem; /* Smaller font size */
+    margin: 0;
+  }
+  
+  .footer-nav ul li {
     margin-bottom: 10px;
-    color: #ffffff; /* Light color for contrast */
-}
-
-.footer-cta {
-    display: flex;
-    flex-direction: column;
-}
-
-.cta-button {
+    text-align: left;
+    padding-left: 40%;
+  }
+  
+  .footer-nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .footer-nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #1676dd, #125a9a); /* Gradient background */
-    color: white;
-    border-radius: 50px; /* Rounded button */
     text-decoration: none;
-    font-size: 0.9rem; /* Smaller font size */
-    text-align: center;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #555; 
+    transform: scale(1.05); 
+  }
 
-.cta-button:hover {
-    background: linear-gradient(135deg, #125a9a, #0f192f); /* Darker gradient on hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
-}
+ .footer-contact {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 16px 0;
+ }
+  
+  .footer-contact a {
+    color: #a0d5e6; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-contact a:hover {
+    color: #ffffff; 
 
-/* Social media icons styling */
-.footer-socials h2 {
-    font-size: 1.2rem; /* Smaller font size */
-    margin-bottom: 10px;
-    color: #ffffff; /* Light color for contrast */
-}
-
-.footer-socials a {
-    margin: 0 10px;
-    color: #ffffff;
-    font-size: 1.5rem; /* Slightly smaller size */
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer-socials a:hover {
-    color: #1676dd; /* Highlight color on hover */
-    transform: scale(1.1); /* Slightly enlarge icons on hover */
-}
-
-/* Clients section styling */
-.footer-clients {
-    flex: 1;
-    margin: 10px;
-    min-width: 180px;
-}
-
-.footer-clients h2 {
-    font-size: 1.2rem; /* Smaller font size */
-    margin-bottom: 10px;
-    color: #ffffff; /* Light color for contrast */
-}
-
-.footer-client-logos {
+  }
+  
+  .footer-clients {
+    padding: 70px;
     display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer-clients p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .clientss{
+    width:30%;
+    margin-right: 90px;
+  }
+  
+  .footer-client-logos {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); 
+    gap: 80px; 
     flex-wrap: wrap;
-    gap: 15px; /* Space between logos */
-    justify-content: center; /* Center logos */
-}
+    justify-content: center;
+  }
+  
+  .footer-client-logos img {
+    max-width: 60px;
+    max-height: 50px;
+    object-fit: contain;
+    filter: sepia(100%) saturate(200%) hue-rotate(210deg) brightness(60%);
+    transition: filter 0.3s ease;
+  }
+  
+  .footer-client-logos img:hover {
+    filter: sepia(0%) saturate(100%) hue-rotate(210deg) brightness(80%);
+  }
+  
 
-.footer-client-logos img {
-    max-width: 80px; /* Smaller logo size */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure logos are not distorted */
-    filter: brightness(0) invert(1); /* Invert colors for better contrast */
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.footer-client-logos img:hover {
-    transform: scale(1.1); /* Slightly enlarge logos on hover */
-    filter: brightness(1) invert(0); /* Normal color on hover */
-}
-
-/* Contact section styling */
-.footer-contact {
-    padding: 15px;
-    border-radius: 12px; /* Rounded corners */
-    background: rgba(27, 38, 61, 0.8); /* Semi-transparent background */
-    text-align: left;
-}
-
-/* Contact information styling */
-.footer-contact h2 {
-    font-size: 1.2rem; /* Smaller font size */
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .footer-socials a {
+    color: #a0d5e6;
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: #ffffff; /* White color on hover */
+    transform: scale(1.2); /* Slightly larger on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark background for the bottom section */
+    border-top: 2px solid #a0d5e6; /* Light blue border at the top */
+  }
+  
+  .footer-bottom .footer-logo {
+    font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #ffffff; /* Light color for contrast */
-}
-
-.footer-contact p {
-    font-size: 0.9rem; /* Smaller font size */
-}
-
-.footer-contact p a {
-    color: #1676dd; /* Highlight color for links */
-    text-decoration: none;
-}
-
-.footer-contact p a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9rem;
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-client-logos img {
+      max-width: 100px;
+      max-height: 40px;
+    }
+  
+    .footer-nav ul li {
+      margin-bottom: 5px;
+    }
+  
+    .footer-socials {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

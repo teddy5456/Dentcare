@@ -11,6 +11,7 @@ import Book from './components/Book';
 import FAQ from './components/FAQ';
 import Blog from './components/Blog';
 import TeamComponent from './components/TeamComponent';
+import { Analytics } from '@vercel/analytics/react';
 import BlogPostPage from './components/BlogPostPage'; // Import the BlogPostPage component
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPostPage />} /> {/* Add this route */}
+          <Analytics />
         </Routes>
         <Footer />
       </div>
